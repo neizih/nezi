@@ -1,0 +1,180 @@
+body {
+  background: black;
+  color: white;
+  width: 950px;
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+img{
+  max-width: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+p { 
+  color: white;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 10px;
+}
+
+li{
+  margin: 5px 0;
+}
+
+li:hover{
+  font-style: italic;
+}
+
+a:link{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited{ 
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;  
+  gap: 10px;
+}
+
+#music-img{
+  margin-right: 2px;
+}
+
+#artist{
+  margin: 10px;
+}
+
+.wel-sec{
+  padding: 40px;
+  margin: 10px;
+}
+
+#prog{
+  max-width: 150px;
+  margin: 10px;
+  border: 1px solid white;
+}
+
+#song-name{
+  font-size: 12px;
+  color: gray;
+}
+
+.mini-container {
+  display: flex;
+}
+
+.sec {
+  padding: 10px;
+  border: 1px solid white; 
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+
+.sec > h3{ 
+  margin: 0; 
+  padding: 2px 5px;
+  background: white;
+  color: black;
+}
+
+.sec > p{
+  padding: 2px 5px;
+}
+
+.sub-sec{
+  padding: 5px; 
+  border: 1px solid white;
+  margin: 0px;
+}
+
+.sub-sec > p{ 
+  margin: 2px 5px;
+}
+
+#guestbook{
+  text-align: center;
+  width: 250px;
+}
+
+#menu{ 
+  width: 200px;
+}
+
+#main{ 
+  width: 550px; 
+}
+
+.main-sec{ 
+  display:grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap: 10px; 
+}
+
+.main-sec > div{
+  border: 1px solid white;
+  text-align: center;
+  background: rgba(0,0,0,0);
+}
+
+.mid-sec{
+  height:300px;
+}
+
+#cool {
+  max-width:300px; 
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.main-sec > .sec >  h3{
+  background: rgba(0,0,0,0);
+  color: white;
+  background: black;
+  margin: 0 0 10px 0;
+}
+
+#banner{
+  max-width: 500px; 
+  height: 300px;
+  margin: auto;
+}
+
+.gif {
+    position: absolute;
+    animation: fadeGif 5s linear infinite;
+    z-index: -1;
+}
+
+@keyframes fadeGif {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+footer { 
+  margin-top: auto;
+  text-align: center;
+}
+
+#footer-text{
+  color: gray;
+  font-size: 12px;
+}
