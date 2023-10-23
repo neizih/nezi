@@ -1,13 +1,12 @@
 body {
   background: black;
   color: white;
-  width: 950px;
+  width: 800px;
   margin: auto;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
-
 
 img{
   max-width: 50px;
@@ -27,10 +26,6 @@ ul{
 
 li{
   margin: 5px 0;
-}
-
-li:hover{
-  font-style: italic;
 }
 
 a:link{
@@ -68,7 +63,7 @@ a:visited{
   border: 1px solid white;
 }
 
-#song-name{
+.gray-text{
   font-size: 12px;
   color: gray;
 }
@@ -108,15 +103,15 @@ a:visited{
 
 #guestbook{
   text-align: center;
-  width: 250px;
+  max-width: 200px;
 }
 
 #menu{ 
-  width: 200px;
+  width: 190px;
 }
 
 #main{ 
-  width: 550px; 
+  min-width: 400px;
 }
 
 .main-sec{ 
@@ -125,27 +120,57 @@ a:visited{
   gap: 10px; 
 }
 
+
 .main-sec > div{
   border: 1px solid white;
-  text-align: center;
   background: rgba(0,0,0,0);
 }
 
 .mid-sec{
-  height:300px;
+  height:250px;
+}
+
+.new-container{
+  padding: 5px 2px;
+  color: black;
+}
+
+.new{
+  background: white;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  padding: 0 5px;
+  margin:2px auto;
+  width: 90%;
+}
+
+
+.up-p{
+  margin: 8px 5px;
+  font-size: 14px;
+}
+
+.date{
+  font-size: 10px; 
+  color: gray;
 }
 
 #cool {
-  max-width:300px; 
-  height: 200px;
-  margin-bottom: 10px;
+  min-width: 150px;
+  text-align: center;
 }
 
-.main-sec > .sec >  h3{
-  background: rgba(0,0,0,0);
-  color: white;
-  background: black;
-  margin: 0 0 10px 0;
+.img-class{
+  text-align: center;
+  margin: 30px 0;
+}
+
+.mid-sec>  h3{
+  margin: 0; 
+  padding: 2px 5px;
+  background: white;
+  color: black;
 }
 
 #banner{
@@ -159,6 +184,8 @@ a:visited{
     animation: fadeGif 5s linear infinite;
     z-index: -1;
 }
+
+
 
 @keyframes fadeGif {
     0%, 100% {
