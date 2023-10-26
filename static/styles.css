@@ -38,6 +38,25 @@ a:visited{
   color: inherit;
 }
 
+.link{
+  background:white;
+  padding: 2px 5px;
+  font-weight: bold;
+}
+
+.unv{
+  text-decoration: line-through;
+  color: gray;
+}
+
+.link:link{
+  color: black;
+}
+
+.link:visited{
+  color:black;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;  
@@ -102,8 +121,19 @@ a:visited{
 }
 
 #guestbook{
-  text-align: center;
   max-width: 200px;
+}
+
+.sec-chat{
+  border: 1px solid white;
+  text-align: center;
+  height: 100%;
+}
+
+.sec-chat > h3{
+  background: white; 
+  color:black;
+  margin: 0;
 }
 
 #menu{ 
@@ -205,3 +235,5 @@ footer {
   color: gray;
   font-size: 12px;
 }
+
+
