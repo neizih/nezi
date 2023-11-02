@@ -2,7 +2,7 @@
 // Function to create and randomly position GIFs
         function createRandomGif() {
             const gif = document.createElement("img");
-            gif.src = "https://web.archive.org/web/20091022064922im_/http://www.geocities.com/pollardgen/artflashstar.gif";
+            gif.src = "/gif/star.gif";
             gif.classList.add("gif");
 
             const maxX = window.innerWidth - 100; // Adjust based on GIF size
