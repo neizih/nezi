@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+    </style>
+  </head>
+   <body > 
+    <article style="padding: 100px 0;">
+      <div class="container">
+        <div id="menu">
+          {{ partial "menu.html" .}}
+         
+          <div class="sec">
+            <h3>Cool Websites</h3>
+          <div style="margin-top: 5px">
+            <marquee onmouseover="this.stop()" onmouseout="this.start()" id="gifs" scrollamount="3">
+            <a href="https://landchad.net" target="_blank"><img src="https://landchad.net/pix/landchad.gif" alt="LandChad.net"></a>
+<a href="https://melankorin.net/"><img target="_blank" src="https://melankorin.net/assets/img/buttons/button-1.gif" alt=""></a>
+            </marquee>
+          </div>
+          </div>
+        </div>
+        <div id="main">
+          <div class="sec">
+            <h3>About</h3>
+            <div class="sub-sec wel-sec" style="padding:10px;">
+              {{ .Content }}
+           </div>
+          </div>
+          <div class="main-sec">
+            
+          </div>
+        </div>
+        {{ partial "chat.html" .}}
+        
+      </div>
+
+      </div>
+    </article>
+    <script src="/index.js"></script>
+    <footer>
+      <p id="footer-text"> &copy; Copyright 2023 Nezi </p> 
+    </footer>
+  </body>
+</html>
