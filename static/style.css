@@ -214,8 +214,6 @@ a:visited{
     z-index: -1;
 }
 
-
-
 @keyframes fadeGif {
     0%, 100% {
         opacity: 0;
