@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+    </style>
+  </head>
+   <body > 
+    <article style="padding: 100px 0;">
+      <div class="container">
+        <div id="menu">
+          {{ partial "menu.html" .}}
+          
+        </div>
+        <div id="main">
+          <div class="sec">
+            <h3>About</h3>
+            <div class="sub-sec wel-sec" style="padding:10px;">
+              <p>
+              
+              I'm a 20-year-old from Costa Rica who loves computers, music, and video games.
+              </p>
+              <br>
+              <p>
+              I'd like to talk more about this page tho. First time I saw a website like this was from <a class="link" target="_blank" href="https://www.bugswriter.com/">bugswriter</a>. He has a very cool old style website which I was inspired by. Also, this idea of having a personal space where you can do whatever you want without censorship or an algorithm in between convinced me of doing my own website, crazy no one thinks about that.
+              </p>
+              <br>
+<p>
+
+This page is still under develpment, so, very soon im gonna add a recipies section, I dont really know how to cook so im hoping that section forces me to learn how to cook. Im gonna also have a trips section, one of my dreams is being able to hike and climb big mountains, I would like to document every single trip. Hope you find my page interesting, thanks for reading!
+              </p>
+           </div>
+          </div>
+          <div class="main-sec">
+            
+          </div>
+        </div>
+        {{ partial "chat.html" .}}
+        
+      </div>
+
+      </div>
+    </article>
+    <script src="/index.js"></script>
+    <footer>
+      <p id="footer-text"> &copy; Copyright 2023 Nezi </p> 
+    </footer>
+  </body>
+</html>
