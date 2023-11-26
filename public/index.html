@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+	<meta name="generator" content="Hugo 0.120.3">
     <meta charset="utf-8">
     <title>Home Page</title>
     <link rel="stylesheet" href="style.css"> </head>
-    <link rel="icon" type="image/x-icon" href="/img/favicon.png"><link>
 </style>
   <body > 
     <article>
@@ -14,7 +14,53 @@
         </video >
       </div>
       <div class="container">
-        {{ partial "menu.html" .}}
+        
+        <div id="menu">
+          <div class="sec">
+            <h3>Menu</h3>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="/about/">About</a><li>
+              <li> <a href="/recipies/index.html"> Recipies</a></li>
+              <li class="unv"><a>Trips</a></li>
+            </ul>
+          </div>
+          <div class="sec">
+            <h3>Contact</h3>
+            <ul>
+              <li>Discord - .nezi_</li>
+             <li>Email - nezi@nezi.online</li>
+            </ul>
+          </div>
+
+          <div class="sec">
+            <h3>Cool Song</h3>
+            <div class="sub-sec">
+              <div class="mini-container">
+                <div style="margin-top: 2px">
+                <img style="max-width: 78px; border: 1px solid white" id="music-img" src="/img/jonatan.webp">
+                </div>
+                <div id="artist" style="padding-top: 10px;">
+                  <a target="_blank" href="https://www.youtube.com/watch?v=hMsivXae1oM&ab_channel=jonatanleandoer96-Topic"><span> Psycho's in Charge</span></a>
+                <div>
+                  <marquee scrollamount="2" class="gray-text"> Jonatan Leandoer96 </marquee>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+
+          <div class="sec">
+            <h3>Cool Websites</h3>
+          <div style="margin-top: 5px">
+            <marquee onmouseover="this.stop()" onmouseout="this.start()" id="gifs" scrollamount="3">
+            <a href="https://landchad.net" target="_blank"><img src="https://landchad.net/pix/landchad.gif" alt="LandChad.net"></a>
+<a href="https://melankorin.net/"><img target="_blank" src="https://melankorin.net/assets/img/buttons/button-1.gif" alt=""></a>
+            </marquee>
+          </div>
+          </div>
+        </div>
+
         <div id="main">
           <div class="sec">
           <h3>Welcome!</h3>
@@ -34,14 +80,6 @@ This page is still under development, if you find anything weird, please let me 
             <div class="sec">
               <h3>Updates</h3>
               <section class="new-container">
-                <div class="new">
-                  <span>Added chat</span>
-                  <span class="date">26 Nov 2023</span>
-                </div>
-                <div>
-                  <p class="up-p">Leave a message</p>
-                </div>
- 
                 <div class="new">
                   <span>Recipies section</span>
                   <span class="date">8 Nov 2023</span>
@@ -67,7 +105,13 @@ This page is still under development, if you find anything weird, please let me 
             </div>
           </div>
         </div>
-        {{ partial "chat.html" .}}
+                <div id="guestbook">
+          <div class="sec-chat">
+            <h3>Chat</h3>
+              <p>In progress</p>
+              <img id="prog" src="/img/inprog.jpeg">
+        </div>
+
       </div>
 
       </div>
