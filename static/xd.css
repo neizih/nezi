@@ -8,14 +8,22 @@ body {
   flex-direction: column;
 }
 
+.image-content img{
+  max-width: 200px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
 img{
-  max-width: 50px;
+  max-width: px;
   padding: 0;
   margin: 0;
 }
 
 p { 
   color: white;
+  margin: 10px 0;
 }
 
 ul{
@@ -114,10 +122,6 @@ a:visited{
   padding: 5px; 
   border: 1px solid white;
   margin: 0px;
-}
-
-.sub-sec > p{ 
-  margin: 2px 5px;
 }
 
 #guestbook{
@@ -232,5 +236,3 @@ footer {
   color: gray;
   font-size: 12px;
 }
-
-
