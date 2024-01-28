@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Recipies</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png"><link>
+
+    <style>
+        .rec-list{
+          list-style-type: disc;
+
+        }
+    </style>
+   </head>
+  <body > 
+    <article style="padding: 100px 0;">
+      <div class="container">
+        {{ partial "menu.html" .}}
+        <div id="main">
+          <div class="sec">
+          <h3>Recipie List</h3>
+            <div class="sub-sec wel-sec" style="padding:10px;">
+                <div class="intro" style="" >
+                  {{ .Content }}
+                </div>
+                <!--{{ range .Data.Pages }}
+                <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                {{ end }} -->
+
+                <table>
+                  <span>Irl friends</span>
+                  <tr>
+                    <li>Leti</li>
+                    <li>Ale</li>
+                    <li>Luis</li>
+                    <li>Jin</li>
+                    <li>Panf</li> 
+                    <li>Kari</li>
+                    <li>Esteban</li> 
+                    <li>Santi</li> 
+                    <li>Tomas</li>
+                    <li>李业勘</li>
+                 </tr>
+                </table>
+
+                <table style="display: block;">
+                  <span>Coolest SA ppl<span>
+                  <tr>
+                    <li>Inn0</li>
+                    <li>Egri</li>
+                    <li>Lapaphacker</li>
+                    <li>Elry</li>
+                    <li>Daninja<li>
+                  </tr>
+                  <tr>
+                    <li>Salva</li>
+                    <li>Facu</li>
+                    <li>K1kere</li>
+                    <li>Masacrado</li>
+                    <li>Bugs</li>                  
+                  </tr>
+                    <li>Chelo</li>
+                    <li>Sesh</li>
+                    <li>Neon</li>
+                    <li>Sthifen</li>
+                    <li>Fercu</li>
+                  </tr>
+                  <tr>
+                    <li>Garfio</li>
+                    <li>Godgo</li>
+                    <li>Credditless</li>
+                    <li>Lain</li>
+                    <li>NotFeernando</li>
+                  </tr>
+                </table>
+
+                <table>
+                  <span>Cool online people outside SA<span>
+                      <tr>
+                        <li>Wartai</li>
+                        <li>Tuwkkake</li>
+                        <li>Omar</li>
+                        <li>Andrelik</li>
+                        <li>Ihatejulen<li>
+                        <li>Huetaka</li>
+                        <li>Yxng_pk</li>
+                        <li>Falco</li>
+                        <li>EdgyOnlinePseudonym</li>
+                        <li>PlaylistNotFound</li>
+                        <li>Kira</li>
+                        <li>Mako</li>
+                        <li>Nog</li>
+                        <li>HemoLm</li>
+                        <li>Catcilia</li>
+                        <li>Leafar</li>
+                        <li>Filo<li>
+                        <li>Ominours</li>
+                        <li>KuroiKenshi__</li>
+                        <li>Adrix</li>
+                        <li>Ungone</li>
+                        <li>Onicide</li>
+                        <li>joshfromxbox</li>
+                        <li>MaudCraeb</li>
+                        <li>Ravelia</li>
+                        <li>Hinami</li>
+                        <li>Yohki_</li>
+                        <li>NoobDarkSoull</li>
+                        <li>Indura</li>
+                        <li>Inservin</li>
+                        <li>sovietspaceship</li>
+                        <li>Mommy_Law</li>
+                        <li>cvrsed</li>
+                        <li>Mads</li>
+                        <li>CopeSeetheMorb</li>
+                        <li>보름달베기</li>
+                        <li>Mira</li>
+                        <li>gatomojado</li>
+                        <li>Stbx</li>
+                        <li>Rodri</li>
+                        <li>SomaCruz</li>
+                        <li>Specter</li>
+                        <li>Mizzle</li>
+                        <li>Zubstcat</li>
+                        <li>Lino</li>
+                      </tr>
+                </table>
+            </div>
+          </div>
+        </div>
+        {{ partial "chat.html" .}}
+      </div>
+
+      </div>
+    </article>
+    <script src="/index.js"></script>
+    <footer>
+      <p id="footer-text"> &copy; Copyright 2023 Nezi </p> 
+    </footer>
+  </body>
+</html>
