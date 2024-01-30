@@ -13,10 +13,11 @@ body {
   text-align: center;
   margin: 0 auto;
   display: block;
+  border: 3px solid white;
 }
 
 img{
-  max-width: px;
+  max-width: 50px;
   padding: 0;
   margin: 0;
 }
@@ -174,10 +175,20 @@ a:visited{
   align-items: center; 
   justify-content: space-between;
   padding: 0 5px;
-  margin:2px auto;
+  margin:5px auto;
   width: 90%;
 }
 
+.newest{
+  background: white;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  padding: 0 5px;
+  margin:5px auto;
+  width: 90%;
+  border: 2px dotted black;
+}
 
 .up-p{
   margin: 8px 5px;
@@ -235,4 +246,14 @@ footer {
 #footer-text{
   color: gray;
   font-size: 12px;
+}
+
+::-webkit-scrollbar{
+  width:2px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: white;
+  border-radius: 2px;
+
 }

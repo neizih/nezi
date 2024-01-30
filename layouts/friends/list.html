@@ -7,10 +7,73 @@
     <link rel="icon" type="image/x-icon" href="/img/favicon.png"><link>
 
     <style>
-        .rec-list{
+        .friends-list ul{
           list-style-type: disc;
+          overflow: hidden;
+        }
+
+        .friends-list li{
+          float: left; 
+          display: block;
+          text-align: justify;
+          padding: 10px;
+          text-decoration: none;
+        }
+
+        .red{
+          color: rgb(255, 0, 0); 
 
         }
+
+        .purpule{
+          color: rgb(138, 43, 226);
+        }
+
+        .orange{
+          color: rgb(255, 69, 0);
+        }
+
+        .pink{
+          color: rgb(255, 105, 180);
+        }
+
+        .green{
+          color: rgb(0, 128, 0)
+        }
+
+        .light-green{
+          color: rgb(0, 255, 127)
+        }
+
+        .yellow{
+          color: rgb(218, 165, 32);
+        }
+
+        .blue{
+          color: rgb(0, 0, 255);
+        }
+
+        .dodger-blue{
+          color: rgb(30, 144, 255);
+        }
+
+        .gray{
+          color:rgb(95, 158, 160);
+        }
+
+        .friends-list{
+          padding-top: 10px;
+          text-align: center;
+          margin: 0 auto;
+        }
+
+        .cool-ppl{
+          margin: 0 auto;
+          background: white;
+          color:black;
+          padding: 5px;
+        }
+
     </style>
    </head>
   <body > 
@@ -19,112 +82,108 @@
         {{ partial "menu.html" .}}
         <div id="main">
           <div class="sec">
-          <h3>Recipie List</h3>
+          <h3>Cool people</h3>
             <div class="sub-sec wel-sec" style="padding:10px;">
-                <div class="intro" style="" >
+                <div class="inulo" style="" >
                   {{ .Content }}
                 </div>
                 <!--{{ range .Data.Pages }}
                 <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
                 {{ end }} -->
 
-                <table>
-                  <span>Irl friends</span>
-                  <tr>
+                <div class="friends-list">
+                <div>
+                  <span class="cool-ppl">Friends</span>
+                  <ul>
                     <li>Leti</li>
                     <li>Ale</li>
                     <li>Luis</li>
                     <li>Jin</li>
                     <li>Panf</li> 
                     <li>Kari</li>
-                    <li>Esteban</li> 
+                    <li>Hoyos</li>
                     <li>Santi</li> 
                     <li>Tomas</li>
                     <li>李业勘</li>
-                 </tr>
-                </table>
+                    <li>Sebas</li>
+                    <li>Esteban</li> 
+                 </ul>
+                </div>
 
-                <table style="display: block;">
-                  <span>Coolest SA ppl<span>
-                  <tr>
-                    <li>Inn0</li>
-                    <li>Egri</li>
-                    <li>Lapaphacker</li>
-                    <li>Elry</li>
+                <div>
+                  <span class="cool-ppl">SA brothers</span>
+                  <ul>
+                    <li style="color: rgb(138, 43, 226)">Inn0</li>
+                    <li style="color: rgb(95, 158, 160)">Egri</li>
+                    <li style="color: rgb(95, 158, 160)">Elry</li>
+                    <li style="color: rgb(95, 158, 160)">Sthifen</li>
+                    <li style="color: rgb(95, 158, 160)">Garfio</li>
+                    <li style="color: rgb(95, 158, 160)">Chelo</li>
                     <li>Daninja<li>
-                  </tr>
-                  <tr>
-                    <li>Salva</li>
-                    <li>Facu</li>
-                    <li>K1kere</li>
-                    <li>Masacrado</li>
-                    <li>Bugs</li>                  
-                  </tr>
-                    <li>Chelo</li>
-                    <li>Sesh</li>
-                    <li>Neon</li>
-                    <li>Sthifen</li>
+                    <li style="color: rgb(0, 0, 255)">Salva</li>
+                    <li class="blue">Lapaphacker</li>
+                    <li class="light-green">Facu</li>
+                    <li class="dodger-blue">K1kere</li>
+                    <li class="pink">Regi</li>
+                    <li class="pink">Bugs</li>     
+                    <li class="pink">Lain</li>
+                    <li class="pink">Credditless</li>
+                    <li style="color: rgb(255, 69, 0)">Masacrado</li>
+                    <li class="yellow">Sesh</li>
+                    <li style="color: rgb(255, 0, 0)">Godgo</li>
+                    <li class="dodger-blue">NotFeernando</li>
                     <li>Fercu</li>
-                  </tr>
-                  <tr>
-                    <li>Garfio</li>
-                    <li>Godgo</li>
-                    <li>Credditless</li>
-                    <li>Lain</li>
-                    <li>NotFeernando</li>
-                  </tr>
-                </table>
+                    <li>Neon</li>
+                  </ul>
+                </div>
 
-                <table>
-                  <span>Cool online people outside SA<span>
-                      <tr>
-                        <li>Wartai</li>
-                        <li>Tuwkkake</li>
-                        <li>Omar</li>
-                        <li>Andrelik</li>
-                        <li>Ihatejulen<li>
-                        <li>Huetaka</li>
-                        <li>Yxng_pk</li>
-                        <li>Falco</li>
-                        <li>EdgyOnlinePseudonym</li>
-                        <li>PlaylistNotFound</li>
-                        <li>Kira</li>
-                        <li>Mako</li>
-                        <li>Nog</li>
-                        <li>HemoLm</li>
-                        <li>Catcilia</li>
-                        <li>Leafar</li>
-                        <li>Filo<li>
+                <div>
+                  <span class="cool-ppl">Cool people online<span>
+                      <ul>
+                        <li class="gray">Wartai</li>
+                        <li class="gray">Tuwkkake</li>
+                        <li class="gray">Ungone</li>
+                        <li class="gray">KuroiKenshi__</li>
+                        <li style="color: rgb(178, 34, 34)">Huetaka</li>
+                        <li class="red">Andrelik</li>
+                        <li class="red">Yxng_pk</li>
+                        <li class="red">Filo</li>
+                        <li class="red">Inservin</li>
+                        <li class="red">Mira</li>
+                        <li class="red">Mommy_Law</li>
+                        <li style="color: rgb(138, 43, 226)">Ihatejulen<li>
+                        <li class="purpule">Falco</li>
+                        <li class="purpule">NoobDarkSoull</li>
+                        <li class="purpule">CopeSeetheMorb</li>
+                        <li class="purpule">Indura</li>
+                        <li class="green">HemoLm</li>
+                        <li class="green">EdgyOnlinePseudonym</li>
+                        <li class="green">Leafar</li>
+                        <li class="green">Sebbo</li>
+                        <li class="pink">Kira</li>
+                        <li class="pink">PlaylistNotFound</li>
+                        <li class="pink">Adrix</li>
+                        <li class="pink">sovietspaceship</li>
+                        <li class="pink">cvrsed</li>
+                        <li class="pink">Hinami</li>
+                        <li class="pink">Lino</li>
+                        <li class="blue">Mako</li>
+                        <li class="blue">Yohki_</li>
+                        <li class="orange">MaudCraeb</li>
+                        <li class="orange">Ravelia</li>
+                        <li class="orange">Mads</li>
+                        <li class="light-green">Omar</li>
+                        <li class="light-green">Zubstcat</li>
+                        <li class="dodger-blue">Catcilia</li>
                         <li>Ominours</li>
-                        <li>KuroiKenshi__</li>
-                        <li>Adrix</li>
-                        <li>Ungone</li>
                         <li>Onicide</li>
-                        <li>joshfromxbox</li>
-                        <li>MaudCraeb</li>
-                        <li>Ravelia</li>
-                        <li>Hinami</li>
-                        <li>Yohki_</li>
-                        <li>NoobDarkSoull</li>
-                        <li>Indura</li>
-                        <li>Inservin</li>
-                        <li>sovietspaceship</li>
-                        <li>Mommy_Law</li>
-                        <li>cvrsed</li>
-                        <li>Mads</li>
-                        <li>CopeSeetheMorb</li>
                         <li>보름달베기</li>
-                        <li>Mira</li>
-                        <li>gatomojado</li>
-                        <li>Stbx</li>
-                        <li>Rodri</li>
-                        <li>SomaCruz</li>
-                        <li>Specter</li>
-                        <li>Mizzle</li>
-                        <li>Zubstcat</li>
-                        <li>Lino</li>
-                      </tr>
-                </table>
+                        <li>Nog</li>
+                      </ul>
+                      <ul>
+                      </ul>
+                </div>
+            </div>
             </div>
           </div>
         </div>
