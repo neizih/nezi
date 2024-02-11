@@ -255,5 +255,11 @@ footer {
 ::-webkit-scrollbar-thumb{
   background: white;
   border-radius: 2px;
+}
 
+
+@media screen and (min-wdith: 300px){
+  body{
+    background: red;
+  }
 }
